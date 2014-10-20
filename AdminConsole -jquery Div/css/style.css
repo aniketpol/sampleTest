@@ -1,0 +1,104 @@
+
+#titleContainer{
+
+   background-color:#808080;  
+}
+
+body{
+font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+h2{
+	color:#FFFFFF; 
+}
+
+.form-control
+{
+  -moz-border-radius: 15px;
+ 	border-radius: 1px;
+    border-radius:  1px;
+    border-style:  black; 
+    font-size: 150%;
+}
+
+#linkToDesciption{
+	margin-top: 20px;
+}
+
+textarea{
+margin-bottom: 20px;	
+font-size: 150%;
+margin-left: 15px;	
+}
+
+
+.btn-lg:hover{
+	color: #FFFFFF;
+}
+
+.btn-lg{
+	
+	border-radius: 1px;
+	color:#FFFFFF;
+	background-color:blue; 
+
+}
+
+textarea{
+
+	display: none;
+}
+
+
+#logo { 
+	max-width: 100%;
+	margin-bottom: 20px;
+ }
+
+
+#recentTabContainer{
+	border: solid 1px black;
+}
+
+
+.thumbnail{
+
+	width: 250px;
+	height:120px;
+	text-align: center;	
+	margin: 5px;
+}
+
+span{
+	word-wrap: break-word;
+}
+
+.slide{
+	
+
+	height: 160px;
+	}
+
+.bxslider{
+
+   margin-bottom: 0px;
+
+}
+.caption{
+
+	text-align:center; 
+}
+
+
+
+#recentTabs{
+
+	position: fixed;
+	top: 400px;
+	margin-left:100px; 
+
+
+}
+
+
+

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Console</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <nav class="navbar navbar-default">
+      <div id="titleContainer" class="container">
+        <div class="navbar-header">
+          <h2>Admin Console</h2>
+        </div>
+      </div>
+    </nav>
+   
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"><img class="img-responsive" src="img/logo.png"></div>	
+   	<div class="col-sm-4"></div>
+   	</div>
+   	</div>
+
+   	<div id="form-container" class="container">
+   	
+    <div class="row">
+    <div class="col-sm-1"></div> 
+    <div class="col-sm-10">
+      <form  role="form">
+        
+        <div class="col-xs-7">
+         <input type="text" class="form-control input-lg" id="url" placeholder="URL">
+        </div>
+       
+        
+        
+        <div class="col-xs-3">
+          <input type="text" class="form-control input-lg" id="aliasName" placeholder="Alias Name">
+          <a href="#" id="linkToDesciption">Want to add description?</a>
+        </div>
+       <div class="col-xs-1">
+        <button type="submit" class="btn btn-lg">GO</button>
+        </div>
+
+      </form>
+      </div>
+
+      <div class="col-sm-1"></div>
+
+    </div>
+
+    <div class="row">
+    <div class="col-sm-1"></div>
+     <div class="col-sm-10">
+     <textarea rows="3" class="col-xs-10"></textarea> 
+     </div>
+     <div class="col-sm-1"></div>
+    </div>
+   </div>
+
+
+
+
+
+<div class="col-lg-8 col-lg-offset-2" id="recentTabs">
+
+<div class="carousel slide" id="myCarousel">
+  
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+    <img src="img/leftMove.png" height="100px" id="leftMove">
+    </a>
+
+  <div class="carousel-inner">
+    
+    <div id="1" class="item active">
+      <div class="col-xs-3"><a href="#" class="thumbnail"></a> <div class="caption">Alias Name1</div></div>
+    </div>
+    
+    <div id="2" class="item">
+      <div  class="col-xs-3"><a href="#" class="thumbnail"></a><div class="caption">Alias Name2</div></div>
+    </div>
+
+    <div id="3" class="item">
+      <div  class="col-xs-3"><a href="#" class="thumbnail"></a><div class="caption">Alias Name3</div></div>
+    </div>
+    
+    <div id="4" class="item ">
+      <div  class="col-xs-3"><a href="#" class="thumbnail"></a><div class="caption">Alias Name4</div></div>
+    </div>
+    
+    <div class="item">
+      <div class="col-xs-3"><a href="#" class="thumbnail"></a><div class="caption">Alias Name5</div></div>
+    </div>
+    
+    <div class="item ">
+      <div class="col-xs-3"><a href="#" class="thumbnail"></a><div class="caption">Alias Name6</div></div>
+    </div>
+    
+    <div class="item">
+      <div class="col-xs-3"><a href="#" class="thumbnail"></a><div class="caption">Alias Name7</div></div>
+    </div>
+    
+    <div class="item">
+      <div class="col-xs-3"><a href="#" class="thumbnail"></a><div class="caption">Alias Name8</div></div>
+    </div>
+  </div>
+  
+  
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">
+    <img src="img/rightMove.png" height="100px" id="rightMove">
+
+  </a>
+    
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+    <script type="text/javascript">
+
+      $(function() {
+
+  $('.carousel').carousel('pause');
+
+
+    $('.carousel .item').each(function(){
+  
+    var next = $(this).next();
+  
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+  }
+  
+});
+
+});
+      
+
+
+    $('#linkToDesciption').click(function(){
+       $('textarea').toggle();
+    });
+
+
+    /*$('.carousel').carousel({
+     wrap: false
+    });*/
+
+    
+/*$('#myCarousel').on('slid', '', function() {
+  if($('.carousel-inner .item:last').hasClass('active')) {
+    $this.children('.carousel-control.right').hide();
+  }
+});*/
+
+
+$('#myCarousel').on('slide.bs.carousel', function(event) {
+  
+  var $this = $(this);
+
+  
+  //event.direction;
+
+  //$this.children('.carousel-control').show();
+
+ if($('.carousel-inner .item:first').hasClass('active')&& event.direction=="right") {
+   
+ event.preventDefault();
+  
+  } 
+
+
+  else if($('.carousel-inner .item:last').hasClass('active') && event.direction=="left") {
+    //$this.children('.right.carousel-control').hide();
+    event.preventDefault();
+  } 
+
+  /*else {
+    $this.children('.carousel-control').show();
+  }*/
+
+});
+
+
+
+    </script>
+
+
+  </body>
+</html>
