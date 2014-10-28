@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Console</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+</head>
+<body>
+
+<div id="page-wrap">
+   
+<div id="nav-bar">
+	Admin Console
+</div>
+
+<div id="logo-container">
+	<img src="img/logo.png">
+</div>
+
+
+<div id="form-container">
+	
+<form>
+<input type="text"  placeholder="URL" id="url">
+<input type="text" placeholder="Alias Name" id="alias">
+<input type="submit" value="Go" id="addURL"><br>
+<a href="#" id="addDescription">Want to add a description?</a><br>
+<textarea id="description" rows="3"></textarea>
+</form>	
+</div>
+
+<div id="img-container">
+	<img src="img\recent.png">
+	<hr>
+</div>
+<br>
+<div id="recentTab-container">
+	
+<div class="bxslider">
+
+ <div id="test">	
+  <a href="#" class="thumbnail">
+  <div class="slide">
+  <span>aniketpeveveevev</span>
+  </div>
+  </a>
+  <div class="caption">Alias Name1</div>
+ </div>
+
+
+ <div id="test">	
+  <a href="#" class="thumbnail">
+  <div class="slide">
+  <span>aniketpeveveevev</span>
+  </div>
+  </a>
+  <div class="caption">Alias Name1</div>
+ </div>
+
+ <div id="test">	
+  <a href="#" class="thumbnail">
+  <div class="slide">
+  <span>aniketpeveveevev</span>
+  </div>
+  </a>
+  <div class="caption">Alias Name1</div>
+ </div>
+
+<div id="test">	
+  <a href="#" class="thumbnail">
+  <div class="slide">
+  <span>aniketpeveveevev</span>
+  </div>
+  </a>
+  <div class="caption">Alias Name1</div>
+ </div>
+   
+  
+</div>
+
+
+</div>
+
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+	
+
+	$(function(){
+
+		$('.bxslider').bxSlider({
+	      minSlides:1,
+	      maxSlides: 3,
+	      slideWidth: 250,
+	      slideMargin:5
+		});
+
+	});
+</script>
+</body>
+
+</html>
