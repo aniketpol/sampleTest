@@ -13,6 +13,14 @@ body ,html{
 
 }
 
+#requestType{
+
+	padding: 1%;
+	font-size:17px;  
+
+}
+
+
 #nav-bar{
 	color:#FFFFFF;
 	padding: 1%; 
@@ -42,32 +50,7 @@ body ,html{
 */
 
 	
-#url:focus{
-	border: 0;
-	 outline: thin dotted \9;
-	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
-    box-shadow: 0 0 8px rgba(82,168,236,.6);
-}
-
-#alias:focus{
-	border: 0;
-	 outline: thin dotted \9;
-	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
-    box-shadow: 0 0 8px rgba(82,168,236,.6);
-}
-
-#name:focus{
-	border: 0;
-	 outline: thin dotted \9;
-	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
-    box-shadow: 0 0 8px rgba(82,168,236,.6);
-}
-textarea:focus{
-	border: 0;
-	 outline: thin dotted \9;
-	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
-    box-shadow: 0 0 8px rgba(82,168,236,.6);
-}	
+	
 
 
 span{
@@ -93,20 +76,27 @@ span{
 #form-container{
 
 	margin-top:1% ;
-	margin-left:19%; 
-	margin-right: %%;
+	margin-left:12%; 
+	margin-right: 7%;
 }
 
 #url{
-	width: 40%;
+	width: 20%;
 	padding: 1%;
 	 
 	font-size:17px; 
 }
 
+#name{
+
+padding: 1%;
+	 
+	font-size:17px;  
+}
+
 #alias{
 	width: 20%;
-	font-size:17px; 
+	font-size:17px;  
 	padding: 1%; 
 }
 
@@ -115,22 +105,53 @@ span{
  padding: 1.2%;
  background: blue;
  color: white;
-
+ margin-left: 82%;
 }
 
 #description{
 
-	font-size:17px;
-	width: 65%; 
+	font-size:17px; 
+	width: 87%; 
 }
 #addDescription{
 
- margin-left: 39%;
+ margin-left: 58%;
  margin-bottom: 0.3%;
 }
 
+#url:focus{
+	border: 0;
+	 outline: thin dotted \9;
+	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+}
+
+#alias:focus{
+	border: 0;
+	 outline: thin dotted \9;
+	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+}
+
+#name:focus{
+	border: 0;
+	 outline: thin dotted \9;
+	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+}
+textarea:focus{
+	border: 0;
+	 outline: thin dotted \9;
+	-moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+}
+
+#textarea1{
+font-size:17px; 
+	width: 86%; 
 
 
+}
 /*input{
 	display: inline;
 	float: left;
